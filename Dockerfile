@@ -21,7 +21,7 @@ RUN        apk add --no-cache \
                   scipy \
                   pandas \
                   matplotlib
-RUN        echo "manylinux1_compatible = True" > /usr/lib/python3.5/_manylinux.py \
+RUN        echo "manylinux1_compatible = True" > /usr/lib/python3.6/_manylinux.py \
            && cd /usr/bin \
            && ln -sf easy_install-3.6 easy_install \
            && ln -sf idle3.6 idle \
