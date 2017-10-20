@@ -23,7 +23,7 @@ RUN        apk add --no-cache \
                   matplotlib
 RUN        echo "manylinux1_compatible = True" > /usr/lib/python3.5/_manylinux.py \
            && cd /usr/bin \
-           && ln -sf easy_install-3.5 easy_install \
+           && ln -sf easy_install-3.6 easy_install \
            && ln -sf idle3.6 idle \
            && ln -sf pydoc3.6 pydoc \
            && ln -sf python3.6 python \
